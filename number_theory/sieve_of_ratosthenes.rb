@@ -1,7 +1,6 @@
 def sieve_of_ratosthenes(n)
   p = 2
   s = (2..n)
-  i = 2
   sa = s.to_a
   sa.each do |x|
     sa = sa.delete_if { |e| (e % x).zero? && e != p }
